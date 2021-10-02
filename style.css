@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(0,0,0,0.02);
+}
+
+.row{
+    padding: 0 15px;
+}
+
+.container .py-5{
+    background: rgb(115,12,240,0.04);
+    margin-bottom: 30px;
+    padding: 20px !important;
+}
+
+.vote-counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vote-counter p{
+    font-size:2em;
+}
+#car-count{
+    color:blue
+}
+
+/*Media Query*/
+@media(max-width:576px){
+    .car-display{
+        flex-direction: column;
+    }
+    .container{
+        padding: 0;
+    }
+    #car-name{
+        font-size:2.5em
+    }
+}
