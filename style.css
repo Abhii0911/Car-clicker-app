@@ -26,11 +26,20 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .vote-counter p{
     font-size:2em;
 }
+
 #car-count{
     color:blue
+}
+
+.list-group-item{
+    transition: 0.2s;
+}
+.list-group-item:hover{
+    letter-spacing: 0.05em;
 }
 
 /*Media Query*/
@@ -38,9 +47,11 @@ body{
     .car-display{
         flex-direction: column;
     }
+
     .container{
         padding: 0;
     }
+
     #car-name{
         font-size:2.5em
     }
