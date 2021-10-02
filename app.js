@@ -28,7 +28,7 @@ const Model= {
             imgSrc: 'https://rafaeldavish.github.io/car-clicker/img/mercedes-benz.jpg',
         },
     ],
-}
+};
 
 
 
@@ -56,11 +56,11 @@ const carListView = {
             });
             this.carList.appendChild(listItem);
 
-        })
+        });
         
     },
 
-    }
+};
 
 
 
@@ -74,22 +74,22 @@ const carView = {
         this.carImgEl.addEventListener("click",() => {
             appController.incrementCount()
             console.log(this.carCountEl)
-        })
+        });
 
         this.render();
     },
 
     render(){
-        console.log(this.carCountEl.textContent)
         const currentCar = appController.getCurrentCar();
+
         this.carNameEl.textContent = currentCar.name; 
+
         this.carCountEl.textContent = currentCar.clickCount;
+        
         this.carImgEl.src =  currentCar.imgSrc;
 
-        
-        
     }
-}
+};
 
 
 
@@ -119,7 +119,7 @@ const appController = {
         Model.currentCar.clickCount++;
         carView.render();
     }
-}
+};
 
 
 
